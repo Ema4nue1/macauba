@@ -14,25 +14,27 @@
 <form>
 
     <input type="text" placeholder="digite seu email" id="email">
-    <input type="password" placeholder="digite sua senha" id="senha" >
+    <input type="password" placeholder="digite sua senha" id="senha">
     <br><br>
-    <input type="submit" onclick="logar() ; return false" >
+    <input type="submit" onclick="login(); return false">
 
 </form>
-<script>
-function logar(){
-    var login = document.getElementById('email').value
-    var login = document.getElementById('senha').value
 
-    if(login == "f1" && senha == "f1")
-    alert('ta logado')
-    location.href ="inicio.html";
-    else{alert('erro ao logar')}
-
-}
-
-
-</script>
     </div>
+    <script>
+
+        function login(){
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            if( email == "emanuel@gmail.com" && senha =="12345"){
+                alert('logado')
+            }
+            else{
+                alert('erro')
+            }
+        }
+
+    </script>
 </body>
 </html>
